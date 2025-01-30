@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST version="4.2" xmlns="http://www.iab.com/VAST">
+  <Ad id="sample-ad">
+    <InLine>
+      <AdSystem>Brightcove Ad System</AdSystem>
+      <AdTitle>Sample Skippable Ad</AdTitle>
+      <Description>Ad with hosted MP4 video on Dropbox</Description>
+      <Creatives>
+        <Creative>
+          <Linear skipoffset="00:00:30">
+            <Duration>00:02:00</Duration>
+            <MediaFiles>
+              <MediaFile delivery="progressive" type="video/mp4" width="1920" height="1080" scalable="true" maintainAspectRatio="true">
+                <![CDATA[
+                  https://www.dropbox.com/scl/fi/cbyf77xkikqnp6qksj0r2/realSteal.mp4?rlkey=xikh27o37aw4bc0h5b7axpoka&st=y0jc310u&raw=1
+                ]]>
+              </MediaFile>
+            </MediaFiles>
+            <VideoClicks>
+              <ClickThrough>
+                <![CDATA[
+                  https://example.com/click-through-url
+                ]]>
+              </ClickThrough>
+            </VideoClicks>
+          </Linear>
+        </Creative>
+      </Creatives>
+    </InLine>
+  </Ad>
+</VAST>
+
